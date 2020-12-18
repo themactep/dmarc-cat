@@ -90,7 +90,7 @@ func SelectInput(file string) (io.ReadCloser, error) {
 
 	// We have a filename
 	if !checkFilename(file) {
-		return nil, errors.New("bad filename")
+		return nil, fmt.Errorf("bad filename %q", file)
 	}
 
 	// We want the full path
