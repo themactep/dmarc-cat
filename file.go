@@ -20,7 +20,7 @@ filename = receiver "!" policy-domain "!" begin-timestamp
 unique-id = 1*(ALPHA / DIGIT)
 */
 const (
-	reFileName = `^([\S\.]+)!([\S\.]+)!([\d]+)!([\d]+)(![[:alnum:]]+)*(\.\S+)(\.(gz|zip))*$`
+	reFileName = `^([[:alnum:]-\.]+)\!([[:alnum:]-\.]+)(\![[:digit:]]{10}){2}(\![[:alnum:]-]+)?\.(xml(\.gz)?|zip)$`
 )
 
 var reFN *regexp.Regexp
