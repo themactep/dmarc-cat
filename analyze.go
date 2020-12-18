@@ -44,7 +44,7 @@ type headVars struct {
 	Count       int
 }
 
-// Entry representes a single entry
+// Entry represents a single entry
 type Entry struct {
 	IP    string
 	Count int

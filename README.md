@@ -27,7 +27,7 @@ Aside from the standard library, I use `github.com/intel/tfortools` to generate 
 
     go get -u github.com/intel/tfortools
 
-It also use my own module `github.com/keltia/archive` to handle the various archive types.
+I also use my own module `github.com/keltia/archive` to handle various archive types.
 
 If you use Go modules, it should all work automatically.
 
